@@ -1,0 +1,6 @@
+const fs = require('fs');
+
+function sum(a, b) {
+    return a + b;
+  }
+  module.exports = sum;
