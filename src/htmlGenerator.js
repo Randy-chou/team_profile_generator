@@ -8,10 +8,10 @@ function genCards(data){
                         <div class="card h-100 shadow mx-auto" style="max-width: 18rem;">
                             <div class="card-header bg-primary text-light">
                                 <h1 class="fs-4">${member.name}</h1>
-                                <h2 class="fs-4">${member.getRole()}</h2>
+                                <h2 class="fs-4">${member.getIcon()} ${member.getRole()}</h2>
                             </div>
                             <div class="card-body bg-light">
-                                <ul class="list-group">
+                                <ul class="list-group my-3">
                                     <li class="list-group-item">ID: ${member.getID()}</li>
                                     <li class="list-group-item">Email: ${member.getEmail()}</li>
                                     <li class="list-group-item">${member.formatThird()}</li>
@@ -33,6 +33,7 @@ function genHTML(data){
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!--Boostrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Team Profile</title>
     </head>
     
